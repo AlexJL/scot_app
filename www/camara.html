@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="css/camara.css" />
+        <link rel="stylesheet" type="text/css" href="css/sweetalert.css" />
+        <!-- Fuente utilizada para el aplicativo obtenida de google fonts-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css' />-->
+        <title>Camara</title>
+        <script>
+			var conexion="http://pekin.sedalib.com.pe/SIC/";
+		</script>
+    </head>
+    <body>
+        <div data-role="page" id="camara">   
+        <div id="foto"></div>
+        <div id="menu">
+            <div id="contenedorMenu">
+                <button id='btn-foto' ontouchend="capturePhoto()" title="Toma Una Foto"></button>
+                <button id='btn-galeria' ontouchend="getPhoto(pictureSource.PHOTOLIBRARY)" title="Cargar Foto Galeria"></button>
+                <button id='btn-enviar' onclick="enviarFoto(URIimg)" title="Enviar Imagen"></button>
+                <table style="width:100%;margin-top: -10px;float: left;"><tr><td style="width:33%;padding-left: 2px;color:#fd0000;"><b>TOMAR FOTO</b></td><td style="padding-left: 5px;color:#fd0000;"><b>BUSCAR FOTO</b></td><td style="padding-left: 5px;color:#fd0000;"><b>ENVIAR FOTO</b></td></table>
+            </div>
+            
+            <div id="pie-pagina">
+                <center>
+                    <a id="btn-back" rel="external" onclick="regresar()">
+                        <strong>Volver</strong>
+                    </a>
+                </center>
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/capture-min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/sweetalert.min.js"></script>
+        <!--<script type="text/javascript" src="js/index.js"></script>-->
+        <script>
+            swal("Denuncias", "A través de la presente opción Ud. podrá efectuar alguna denuncia por el uso irregular del servicio de Agua, alcantarillado y otras observaciones vinculadas con el servicio. La denuncia tendrá carácter Anónimo, pero se hará uso de la geoposición con el fin de ubicar la incidencia. Gracias.")
+            //longitud="";
+            //latitud="";
+            app.initialize();
+        </script>
+    </body>
+</html>

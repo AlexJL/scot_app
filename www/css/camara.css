@@ -1,0 +1,140 @@
+{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;                
+    -webkit-text-size-adjust: none; 
+    -webkit-user-select: none;             
+    background-color:#f6f6f6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+#contenedorFoto{
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+
+#foto{
+    margin-top: 20px;
+    background-color: #ccc;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+    border: none;
+    height: auto    
+}
+
+#menu{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 115px
+}
+
+#contenedorMenu{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 115px
+}
+
+#btn-foto, #btn-galeria,#btn-enviar{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    background-color: #296fb7;
+    margin: 10px
+}
+
+#btn-foto{
+    background-image: url(../img/camara.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40% 40%
+}
+
+#btn-galeria{
+    background-image: url(../img/albun.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40% 40%
+}
+
+#btn-enviar
+{
+    background-image: url(../img/subir.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+}
+
+#footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 100px
+}
+
+#pie-pagina
+{
+    position: absolute;
+    background-color: #296fb7;
+    width: 100%;
+    height: 50px;
+}
+
+#btn-back, #btn-home
+{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-style: normal;
+    background: #8fcdf0;
+    margin-left: -5px;
+    padding: 10px 40px;
+    font-family:  sans-serif /*{global-font-family}*/
+}
+
+#btn-back
+{
+       border-radius: 10px;
+}
+
+#btn-home
+{
+    border-radius: 0px 10px 10px  0px;
+}
+
+#pie-pagina center
+{
+    margin-top: 1.5em;
+}
+
+#btn-back img,#btn-home img
+{
+    margin-top: 4px;
+    margin-right: 3px;
+    background: #306fb8;
+    border-radius: 20px;
+    padding: 2px;
+    vertical-align: bottom;
+}
+
+#btn-back:hover, #btn-home:hover
+{
+    background: #FFF;
+}
+
